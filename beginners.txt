@@ -1,0 +1,74 @@
+# github beginners notes
+# created by Rajat
+#Date 12/02/2022
+
+
+1.To clone a repo
+git clone <repo url to be copied from the github account>
+
+
+2.To create a repo locally
+git init
+
+
+3.To save the username and email for your commits
+git config --global user.name  <user's name like Rajat Goyal>
+git config --global user.email <user's email like rgoel1410@gmail.com>
+
+
+4.To see existing user's name and email inside a git repo
+git config --global user.name
+git config --global user.email
+
+
+
+5.To track a file via git.
+git add <file name>
+
+6.To add all modified files to be tracked via git
+git add .
+git add -A
+
+7. To commit a file into the staging area
+git commit -m "message to be given with the commit"
+
+
+8.Once you add a file and then add to git and then also added into the commit, if you make changes to this file it will again be shown as modified
+
+9. Suppose you added a file into the staging area mistakenly and you want to remove that from the there, you can run the command
+git rm
+
+10.but git rm command will also delete the file from the local Instead you can use the command
+git rm --cached <file name>
+this command won't remove the file from the local system and you can still see it as modified with the git status command
+
+
+11. Suppose you added a file into the staging area and you made some changes which you didn't require. then you can run the command
+git checkout <file name>
+
+the above command will bring the file from the previous commit. so any changes that you made in your previous commit will appear
+
+
+12. Suppose there are multiple files which got modified and you want to bring them back to original or previous commit. then you can use
+git checkout -f
+
+the above command will compare the changed file with the previous tree or previous commit and bring all the changed file back.
+
+
+13. Suppose you want to see all the commits that you have made in a git repo, then you can run the command
+git log
+
+the above command will show the commit history with an id.  you can always checkout the content with a commit id.
+
+
+14. Suppose git log command shows 1000 or multiple history and you want to filter from them then you can use the below command
+git log -p -<no.>
+for example, git log -p -10
+
+
+15. Suppose you modified few files and added them into the staging area with the git add -A command. and you want to compare them with the previous files in the previous commits
+git diff --staged
+the above command will compare the staging area with the last commit.
+
+
+16. The git diff command compares the current working area with the staging area. that means you still didn't add you changes into the staging and you want to see what changes you made into the file.
