@@ -73,3 +73,13 @@ the above command will compare the staging area with the last commit.
 
 16. The git diff command compares the current working area with the staging area. that means you still didn't add you changes into the staging and you want to see what changes you made into the file.
 where as the git diff --staged command will compare the staging area from the last commit.
+
+
+17. Once you init a local directory it becomes a git repo. but you need to add a remote repo associated to it. you can do so with
+git remote add origin <repo url>
+
+the above command will add a repo located on github.com to the local git repo and consider it as the origin.
+
+18. you can push your staged changes to the remote repo using the command
+git push origin <branch>
+in the above command, the origin refers to the remote repo url.
