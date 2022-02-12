@@ -83,3 +83,15 @@ the above command will add a repo located on github.com to the local git repo an
 18. you can push your staged changes to the remote repo using the command
 git push origin <branch>
 in the above command, the origin refers to the remote repo url.
+
+
+19. If you want to know the name of the remote repo in your local then run
+git remote
+
+20. if you want to know the name of the remote repo as well as the reppo url
+git remote -v
+
+21. If you want to delete a branch, first switch to a different branch with git checkout <branch name>
+git branch -D <branch name>
+
+22. 
