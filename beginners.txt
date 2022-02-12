@@ -94,4 +94,7 @@ git remote -v
 21. If you want to delete a branch, first switch to a different branch with git checkout <branch name>
 git branch -D <branch name>
 
-22. 
+22.   if you want a short status for your changes
+git status -s
+
+23.
